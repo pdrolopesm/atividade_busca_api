@@ -18,7 +18,6 @@ const pressure = document.getElementById('pressure');
 const visibility = document.getElementById('visibility');
 const uvIndex = document.getElementById('uv-index');
 
-{string} cidade
 async function buscarClima(cidade) {
     if (!cidade.trim()) {
         alert('Por favor, digite o nome de uma cidade antes de buscar.');
@@ -50,7 +49,6 @@ async function buscarClima(cidade) {
     }
 }
 
- {Object} data 
 function exibirDados(data) {
     errorMessage.classList.add('hidden');
     weatherResult.classList.remove('hidden');
@@ -89,7 +87,6 @@ function mostrarErro() {
     card.style.color = '#333';
 }
 
-{string} dataHoraStr - String
 function formatarDataHora(dataHoraStr) {
     const partes = dataHoraStr.split(' ');
     if (partes.length === 2) {
@@ -100,8 +97,6 @@ function formatarDataHora(dataHoraStr) {
     return dataHoraStr;
 }
 
-{number} isDay
-{number} temp
 function aplicarTemaDinamico(isDay, temp) {
     const card = document.querySelector('.weather-card');
     
